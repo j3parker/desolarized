@@ -1,5 +1,6 @@
 (module desolarized racket
   (require color-space)
+  (provide (struct-out RGB))
 
   (define-syntax (define-color stx)
     (syntax-case stx ()

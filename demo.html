@@ -4,60 +4,69 @@
 <link rel="stylesheet" href="desolarized.css">
 
 <style>
-table.palette {
-    margin-left: auto;
-    margin-right: auto;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.palette {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.palette table {
+    margin: 0 auto;
     border-collapse: collapse;
     table-layout: fixed;
 }
 
-table.palette thead tr th {
+.palette table thead tr th {
     padding-bottom: 1em;
 }
 
-table.palette tbody tr td {
+.palette table tbody tr td {
     width: 8em;
     height: 4.5em;
     padding: 0;
 }
 
-table.palette tbody tr.yellow td:nth-child(1) { background: var(--desolarized-dark-yellow); }
-table.palette tbody tr.yellow td:nth-child(2) { background: var(--desolarized-yellow); }
-table.palette tbody tr.yellow td:nth-child(3) { background: var(--desolarized-light-yellow); }
-table.palette tbody tr.orange td:nth-child(1) { background: var(--desolarized-dark-orange); }
-table.palette tbody tr.orange td:nth-child(2) { background: var(--desolarized-orange); }
-table.palette tbody tr.orange td:nth-child(3) { background: var(--desolarized-light-orange); }
-table.palette tbody tr.red td:nth-child(1) { background: var(--desolarized-dark-red); }
-table.palette tbody tr.red td:nth-child(2) { background: var(--desolarized-red); }
-table.palette tbody tr.red td:nth-child(3) { background: var(--desolarized-light-red); }
-table.palette tbody tr.magenta td:nth-child(1) { background: var(--desolarized-dark-magenta); }
-table.palette tbody tr.magenta td:nth-child(2) { background: var(--desolarized-magenta); }
-table.palette tbody tr.magenta td:nth-child(3) { background: var(--desolarized-light-magenta); }
-table.palette tbody tr.violet td:nth-child(1) { background: var(--desolarized-dark-violet); }
-table.palette tbody tr.violet td:nth-child(2) { background: var(--desolarized-violet); }
-table.palette tbody tr.violet td:nth-child(3) { background: var(--desolarized-light-violet); }
-table.palette tbody tr.blue td:nth-child(1) { background: var(--desolarized-dark-blue); }
-table.palette tbody tr.blue td:nth-child(2) { background: var(--desolarized-blue); }
-table.palette tbody tr.blue td:nth-child(3) { background: var(--desolarized-light-blue); }
-table.palette tbody tr.cyan td:nth-child(1) { background: var(--desolarized-dark-cyan); }
-table.palette tbody tr.cyan td:nth-child(2) { background: var(--desolarized-cyan); }
-table.palette tbody tr.cyan td:nth-child(3) { background: var(--desolarized-light-cyan); }
-table.palette tbody tr.green td:nth-child(1) { background: var(--desolarized-dark-green); }
-table.palette tbody tr.green td:nth-child(2) { background: var(--desolarized-green); }
-table.palette tbody tr.green td:nth-child(3) { background: var(--desolarized-light-green); }
+.palette table tbody tr.yellow td:nth-child(1) { background: var(--desolarized-dark-yellow); }
+.palette table tbody tr.yellow td:nth-child(2) { background: var(--desolarized-yellow); }
+.palette table tbody tr.yellow td:nth-child(3) { background: var(--desolarized-light-yellow); }
+.palette table tbody tr.orange td:nth-child(1) { background: var(--desolarized-dark-orange); }
+.palette table tbody tr.orange td:nth-child(2) { background: var(--desolarized-orange); }
+.palette table tbody tr.orange td:nth-child(3) { background: var(--desolarized-light-orange); }
+.palette table tbody tr.red td:nth-child(1) { background: var(--desolarized-dark-red); }
+.palette table tbody tr.red td:nth-child(2) { background: var(--desolarized-red); }
+.palette table tbody tr.red td:nth-child(3) { background: var(--desolarized-light-red); }
+.palette table tbody tr.magenta td:nth-child(1) { background: var(--desolarized-dark-magenta); }
+.palette table tbody tr.magenta td:nth-child(2) { background: var(--desolarized-magenta); }
+.palette table tbody tr.magenta td:nth-child(3) { background: var(--desolarized-light-magenta); }
+.palette table tbody tr.violet td:nth-child(1) { background: var(--desolarized-dark-violet); }
+.palette table tbody tr.violet td:nth-child(2) { background: var(--desolarized-violet); }
+.palette table tbody tr.violet td:nth-child(3) { background: var(--desolarized-light-violet); }
+.palette table tbody tr.blue td:nth-child(1) { background: var(--desolarized-dark-blue); }
+.palette table tbody tr.blue td:nth-child(2) { background: var(--desolarized-blue); }
+.palette table tbody tr.blue td:nth-child(3) { background: var(--desolarized-light-blue); }
+.palette table tbody tr.cyan td:nth-child(1) { background: var(--desolarized-dark-cyan); }
+.palette table tbody tr.cyan td:nth-child(2) { background: var(--desolarized-cyan); }
+.palette table tbody tr.cyan td:nth-child(3) { background: var(--desolarized-light-cyan); }
+.palette table tbody tr.green td:nth-child(1) { background: var(--desolarized-dark-green); }
+.palette table tbody tr.green td:nth-child(2) { background: var(--desolarized-green); }
+.palette table tbody tr.green td:nth-child(3) { background: var(--desolarized-light-green); }
 
-table.palette tbody tr td:nth-child(4) {
+.palette table tbody tr td:nth-child(4) {
     width: 0;
     max-width: 0;
     overflow: visible;
 }
 
-table.palette tbody tr td:nth-child(4) span {
+.palette table tbody tr td:nth-child(4) span {
     padding-left: 1em;
 }
 
 .red-stripe {
-    display: inline-block;
+    display: block;
     width: 10em;
     height: 10em;
     background: repeating-linear-gradient(
@@ -67,13 +76,13 @@ table.palette tbody tr td:nth-child(4) span {
         var(--desolarized-red) 2px,
         var(--desolarized-red) 12px
     );
+    margin: 1em;
 }
 
 .green-stripe {
-    display: inline-block;
+    display: block;
     width: 10em;
     height: 10em;
-    margin-left: 2em;
     background: repeating-linear-gradient(
         135deg,
         var(--desolarized-light-green),
@@ -81,44 +90,71 @@ table.palette tbody tr td:nth-child(4) span {
         var(--desolarized-green) 2px,
         var(--desolarized-green) 12px
     );
+    margin: 1em;
+}
+
+.foo div:nth-child(1) {
+    height: 10em;
+    background: var(--desolarized-violet);
+}
+
+.foo div:nth-child(2) {
+    height: 3em;
+    background: var(--desolarized-dark-violet);
+}
+
+.bar div:nth-child(2) {
+    height: 10em;
+    background: var(--desolarized-cyan);
+}
+
+.bar div:nth-child(1) {
+    height: 3em;
+    background: var(--desolarized-dark-cyan);
 }
 </style>
 
-<table class="palette">
-    <thead>
-        <tr>
-            <th>Dark</th>
-            <th>Base</th>
-            <th>Light</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="yellow">
-            <td></td><td></td><td></td><td><span>Yellow</span></td>
-        </tr>
-        <tr class="orange">
-            <td></td><td></td><td></td><td><span>Orange</span></td>
-        </tr>
-        <tr class="red">
-            <td></td><td></td><td></td><td><span>Red</span></td>
-        </tr>
-        <tr class="magenta">
-            <td></td><td></td><td></td><td><span>Magenta</span></td>
-        </tr>
-        <tr class="violet">
-            <td></td><td></td><td></td><td><span>Violet</span></td>
-        </tr>
-        <tr class="blue">
-            <td></td><td></td><td></td><td><span>Blue</span></td>
-        </tr>
-        <tr class="cyan">
-            <td></td><td></td><td></td><td><span>Cyan</span></td>
-        </tr>
-        <tr class="green">
-            <td></td><td></td><td></td><td><span>Green</span></td>
-        </tr>
-    </tbody>
+<div class="foo"><div></div><div></div></div>
+
+<div class="palette">
+    <table>
+        <thead>
+            <tr>
+                <th>Dark</th>
+                <th>Base</th>
+                <th>Light</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="yellow">
+                <td></td><td></td><td></td><td><span>Yellow</span></td>
+            </tr>
+            <tr class="orange">
+                <td></td><td></td><td></td><td><span>Orange</span></td>
+            </tr>
+            <tr class="red">
+                <td></td><td></td><td></td><td><span>Red</span></td>
+            </tr>
+            <tr class="magenta">
+                <td></td><td></td><td></td><td><span>Magenta</span></td>
+            </tr>
+            <tr class="violet">
+                <td></td><td></td><td></td><td><span>Violet</span></td>
+            </tr>
+            <tr class="blue">
+                <td></td><td></td><td></td><td><span>Blue</span></td>
+            </tr>
+            <tr class="cyan">
+                <td></td><td></td><td></td><td><span>Cyan</span></td>
+            </tr>
+            <tr class="green">
+                <td></td><td></td><td></td><td><span>Green</span></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 <div class="red-stripe"></div>
 <div class="green-stripe"></div>
+
+<div class="bar"><div></div><div></div></div>

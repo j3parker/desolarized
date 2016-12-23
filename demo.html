@@ -56,17 +56,31 @@ table.palette tbody tr td:nth-child(4) span {
     padding-left: 1em;
 }
 
-.orange-stripe {
+.red-stripe {
+    display: inline-block;
     width: 10em;
     height: 10em;
     background: repeating-linear-gradient(
         45deg,
-        var(--desolarized-orange),
-        var(--desolarized-orange) 10px,
-        var(--desolarized-light-orange) 2px,
-        var(--desolarized-light-orange) 12px
+        var(--desolarized-light-red),
+        var(--desolarized-light-red) 10px,
+        var(--desolarized-red) 2px,
+        var(--desolarized-red) 12px
     );
+}
 
+.green-stripe {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    margin-left: 2em;
+    background: repeating-linear-gradient(
+        135deg,
+        var(--desolarized-light-green),
+        var(--desolarized-light-green) 10px,
+        var(--desolarized-green) 2px,
+        var(--desolarized-green) 12px
+    );
 }
 </style>
 
@@ -106,4 +120,5 @@ table.palette tbody tr td:nth-child(4) span {
     </tbody>
 </div>
 
-<div class="orange-stripe"></div>
+<div class="red-stripe"></div>
+<div class="green-stripe"></div>

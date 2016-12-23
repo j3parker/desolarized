@@ -1,4 +1,0 @@
-desolarized
-===========
-
-A color scheme

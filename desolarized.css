@@ -1,0 +1,26 @@
+:root {
+	--desolarized-yellow: rgb(245, 186, 68);
+	--desolarized-light-yellow: rgb(255, 214, 95);
+	--desolarized-dark-yellow: rgb(214, 159, 39);
+	--desolarized-orange: rgb(255, 118, 0);
+	--desolarized-light-orange: rgb(255, 145, 0);
+	--desolarized-dark-orange: rgb(229, 91, 0);
+	--desolarized-red: rgb(224, 51, 46);
+	--desolarized-light-red: rgb(255, 82, 69);
+	--desolarized-dark-red: rgb(192, 0, 24);
+	--desolarized-magenta: rgb(212, 57, 130);
+	--desolarized-light-magenta: rgb(242, 87, 156);
+	--desolarized-dark-magenta: rgb(181, 16, 105);
+	--desolarized-violet: rgb(92, 115, 196);
+	--desolarized-light-violet: rgb(120, 140, 224);
+	--desolarized-dark-violet: rgb(63, 90, 168);
+	--desolarized-blue: rgb(0, 141, 209);
+	--desolarized-light-blue: rgb(26, 167, 238);
+	--desolarized-dark-blue: rgb(0, 115, 181);
+	--desolarized-cyan: rgb(31, 161, 152);
+	--desolarized-light-cyan: rgb(70, 189, 179);
+	--desolarized-dark-cyan: rgb(0, 135, 126);
+	--desolarized-green: rgb(132, 154, 0);
+	--desolarized-light-green: rgb(160, 181, 36);
+	--desolarized-dark-green: rgb(104, 128, 0);
+}
